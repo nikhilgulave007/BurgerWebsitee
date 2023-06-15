@@ -1,0 +1,77 @@
+<!doctype>
+<html>
+
+<head>
+    <title>nikiihl's page</title>
+    <script src="F:html\jquerry offline files\jquery-1.7.1.js"></script>
+    <script src="F:html\jquerry offline files\jquery-1.7.1.min.js"></script>
+    <base href="C:\Users\Dell\Pictures\Saved Pictures\"/>
+    <script src="F:\html\jquerry offline files\Scripts  Files\Scripts  Files\bootstrap.js"></script>
+    <script src="F:\html\jquerry offline files\Scripts  Files\Scripts  Files\bootstrap.min.js"></script>
+    <link rel="stylesheet" href="F:\html\jquerry offline files\Scripts  Files\Scripts  Files\bootstrap.css" />
+    <link rel="stylesheet" href="F:\html\jquerry offline files\Scripts  Files\Scripts  Files\bootstrap.min.css" />
+    <style>
+        body
+        {
+            background-color:antiquewhite;
+            
+        }
+       
+    </style>
+    <script>
+        $(document).ready(function()
+        {
+            $("#ss").fadeIn(1500);
+            $("#dd").animate({"left":"550px"});
+        })
+    </script>
+
+
+</head>
+
+<body>
+    <h1 id="ss" class="text-success text-center" style="display: none;">
+        <i>Please fill details to place order</i>
+    </h1>
+    <div class="container">
+        <form class="was-validated" id="dd" style="position: absolute; margin-left:0px;margin-top:50px">
+            <div class="form-group">
+                <label for="num">
+                    <h4>Select Quantity</h4>
+                </label>
+                <input class="form-control" type="number" name="num" id="num" style="width:100px" required />
+                <div class="valid-feedback">ok</div>
+                <br>
+
+                <div>
+                    <label for="option">
+                        <h4>Select Payment Option</h4>
+                    </label><br>
+                    <div style="width:200px">
+                        <select type="input" class="form-control" required>
+                            <option></option>
+                            <option>UPI payment</option>
+                            <option>Debit Card</option>
+                            <option>Cash on Delivery</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="form-group ">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" required /><h4>click to agree term and condition<h4>
+
+                    </label>
+
+                </div>
+                <button class="submit">submit</button>
+
+
+
+        </form>
+
+    </div>
+
+</html>
